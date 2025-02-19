@@ -1,0 +1,13 @@
+%text_doc{
+  width:200px ;  
+  height: 100px;
+  background-color: red;
+  font-size:$font_size25 ;
+}
+
+%d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

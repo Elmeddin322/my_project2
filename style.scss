@@ -1,0 +1,1118 @@
+@import'_variables';
+@import'_extends';
+@import'_mixins';
+
+*{
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   overflow-x: hidden;
+   box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100px;
+    display: flex;    
+}
+.main{
+   @include flexbox( 
+   );
+}
+.left{
+   width: 30%;
+   height: 100px;
+   display: flex;
+}
+.left{
+   @include flexbox(
+      $justify:center,
+      $items:center,
+   );
+   color: white;
+}
+.leftone{
+   width: 60%;
+   height: 100px;
+   display: flex
+}
+.leftone{
+   @include flexbox(
+      $justify:center,
+      $items:center,  
+   );
+   font-size: 20px;
+}
+.right{
+   width: 50%;
+   height: 100px;
+   display: flex
+}
+.right{
+   @include flexbox(
+      $justify:center,
+      $items:center,
+   );
+   color: white;
+}
+.rightone{
+   width: 10%;
+   height: 100px;
+   display: flex;
+}
+.rightone{
+   @include flexbox(
+      $justify:center,
+      $items:center,
+   );
+}
+.righttwo{
+   width: 10%;
+   height: 100px;
+}
+.righttwo{
+   @include flexbox(
+      $justify:center,
+      $items:center,
+   );
+}
+.rightthree{
+   width: 10%;
+   height: 100px;
+}
+.rightthree{
+   @include flexbox(
+      $justify:center,
+      $items:center,
+   );
+}
+.middle{
+   width: 100%;
+   height: 150px;
+   display: flex;
+}
+.middle{
+   @include flexbox(
+      $justify:center,
+      $items:center,
+   );
+   color: white;
+   font-size: 120px
+}
+.middlephoto{
+   width: 100%;
+   height: 800px;
+   display: flex
+}
+.middlephoto{
+   @include flexbox(
+      $justify:right,
+   );
+   background-image: url(https://static.wixstatic.com/media/11062b_921ed17732c7466799969b7b512034e1~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/11062b_921ed17732c7466799969b7b512034e1~mv2.jpg);
+   background-size: cover
+}
+.middlephotomid{
+   width: 30%;
+   height: 250px;
+   display: flex
+}
+.middlephotomid{
+   @include flexbox(
+   );
+   background-color:gray;
+}
+.middlephotone{
+   width: 50%;
+   height: 250px;
+   display: flex
+}
+.middlephotone{
+   @include flexbox(
+      $justify:right,
+   );
+   background-image: url(https://static.wixstatic.com/media/11062b_a60c1286287b4f61bef6d50b8288381d~mv2.jpg/v1/fill/w_392,h_468,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Portrait.jpg);
+   background-size: cover
+}
+.middlephototext{
+   width: 50%;
+   height: 80px;
+   display: flex
+}
+.middlephototext{
+   @include flexbox(
+      $justify:right,
+      $items:center,
+   );
+   color: white;
+   background-color: gray;
+}
+.middlephototwo{
+   width: 50%;
+   height: 100px;
+   display: flex
+}
+.middlephototwo{
+   @include flexbox(
+   );
+   margin-top:140px;
+   margin-left: -195px;
+   background-color: gray;
+}
+   .button1 {
+      background-color: white;
+      border: none;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 48px;
+      margin-left: 20px;
+    }
+    
+    .button1:hover {
+      opacity: 1;
+      background-color: black;
+      color: white;
+
+   }
+   .middlenews{
+      width: 100%;
+      height: 130px;
+      display: flex;
+      
+   }
+   .middlenews{
+      @include flexbox(
+      );
+      font-size: 80px;
+      color: white;
+      margin-top: 100px;
+      margin-left: 80px;
+   }
+   .middleup{
+      width: 100%;
+      height: 100px;
+      display: flex
+   }
+   .middleup{
+      @include flexbox(
+      );
+      margin-left: 150px;
+      color: white
+   }
+   .middle1{
+      width: 100%;
+      height: 350px;
+      display: flex
+   }
+   .middle1{
+      @include flexbox(
+         $justify:center,
+         $items:center,
+      );
+      background-color: black
+   }
+   .middlecen{
+      width: 70%;
+      height: 300px;
+      display: flex
+   }
+   .middlecen{
+      @include flexbox(
+         $justify:left,
+      );
+      background-color: gray;
+   }
+   .middleone{
+      width: 100%;
+      height: 300px;
+      display: flex
+   }
+   .middleone{
+      @include flexbox(
+      );
+      background-image: url(https://static.wixstatic.com/media/11062b_ea98eae7c92846e59bd946b2555c76b9~mv2.jpg/v1/fill/w_980,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_ea98eae7c92846e59bd946b2555c76b9~mv2.jpg);
+      background-size: cover
+   }
+   .middlegame{
+      width:40%;
+      height: 100px;
+      display: flex
+   }
+   .middlegame{
+      @include flexbox(
+      );
+      background-color: gray;
+      margin-left: 30px;
+      margin-top: 10px;
+      font-size: 20px;
+      color: white
+   }
+   .middlework{
+      width: 50%;
+      height: 110px;
+      display: flex
+   }
+   .middlework{
+      @include flexbox(
+      );
+      margin-top: 140px;
+      margin-left: -240px;
+      background-color: gray;
+      color: white
+   }
+   .middle2{
+      width: 100%;
+      height: 350px;
+   }
+   .middle2{
+     @include flexbox(
+         $justify:center,
+         $items:center,
+     );
+     background-color:black
+   }
+   .middlecen2{
+      width: 70%;
+      height: 300px;
+      display: flex
+   }
+   .middlecen2{
+      @include flexbox(
+      );
+      background-color: gray;
+   }
+   .middleone2{
+      width: 65%;
+      height: 300px;
+      display: flex
+   }
+   .middleone2{
+      @include flexbox(
+      );
+      background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4d3e757d-31cf-4bcb-903e-2971244e49d0/dijbfyu-9cdff5ab-eef5-443d-a903-f288abe03b16.png/v1/fill/w_1182,h_676,q_70,strp/dark_matter__by_radiaiant_dijbfyu-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzMyIiwicGF0aCI6IlwvZlwvNGQzZTc1N2QtMzFjZi00YmNiLTkwM2UtMjk3MTI0NGU0OWQwXC9kaWpiZnl1LTljZGZmNWFiLWVlZjUtNDQzZC1hOTAzLWYyODhhYmUwM2IxNi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.vRsoa2t8nQKo-xS_rfIhQko1F1yRntkshdzOsGkjem4);
+      background-size: cover;
+   }
+   .middlegame2{
+      width:20%;
+      height: 100px;
+      display: flex
+   }
+   .middlegame2{
+      @include flexbox(
+      );
+      margin-left: 30px;
+      margin-top: 10px;
+      font-size: 20px;
+      color: white;
+      background-color: gray;
+   }
+   .middlenext{
+      width: 25%;
+      height: 150px;
+      display: flex
+   }
+   .middlenext{
+      @include flexbox(
+      );
+      margin-top: 140px;
+      margin-left: -130px;
+      color: white;
+      background-color: gray
+   }
+   .middle3{
+      width: 100%;
+      height: 350px;
+   }
+   .middle3{
+     @include flexbox(
+         $justify:center,
+         $items:center,
+     );
+     background-color:black
+   }
+   .middlecen3{
+      width: 70%;
+      height: 300px;
+      display: flex
+   }
+   .middlecen3{
+      @include flexbox(
+      );
+      background-color: gray;;
+   }
+   .middleone3{
+      width: 95%;
+      height: 300px;
+      display: flex
+   }
+   .middleone3{
+      @include flexbox(
+      );
+      background-image: url(https://static.wixstatic.com/media/11062b_91e14278eb7a40518f073ecfe49f6559~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_91e14278eb7a40518f073ecfe49f6559~mv2.jpg);
+      background-size: cover
+   }
+   .middlegame3{
+      width:35%;
+      height: 100px;
+      display: flex
+   }
+   .middlegame3{
+      @include flexbox(
+      );
+      background-color: gray;
+      color: white;
+      font-size: 20px;
+      margin-left: 30px;
+      margin-top: 10px;
+   }
+   .middleword{
+      width: 50%;
+      height: 110px;
+      display: flex
+   }
+   .middleword{
+      @include flexbox(
+      );
+      margin-top: 140px;
+      margin-left: -240px;
+      background-color: gray;
+      color: white;
+   }
+   .middlebut{
+      width: 100%;
+      height: 120px;
+      display: flex
+   }
+   .middlebut{
+      @include flexbox(
+         $justify:center,
+         $items:center,
+      );
+   }
+   .button2{
+      background-color: white;
+      border: none;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 48px;
+      margin-left: 780px;
+    }
+    
+    .button2:hover {
+      opacity: 1;
+      background-color: black;
+      color: white;
+    }
+    .middlelevel{
+      width: 100%;
+      height:100px;
+      display: flex
+    }
+    .middlelevel{
+      @include flexbox(
+      );
+      font-size: 70px;
+      margin-top: 90px;
+      margin-left: 70px;
+      color: white;
+    }
+    .middleskill{
+      width: 100%;
+      height: 70px;
+      display: flex
+    }
+
+    .middleskill{
+      @include flexbox(
+      );
+      color: white;
+      margin-left: 70px;
+    }
+    .middlemaster{
+      width: 100%;
+      height: 200px;
+      display: flex
+    }
+    .middlemaster{
+      @include flexbox(
+         $justify:center,
+         $items:center
+      );
+      color: white;
+      font-size: 27px
+    }
+    .footer{
+      width: 100%;
+      height: 350px;
+      display: flex
+    }
+    .footer{
+      @include flexbox(
+      );
+      margin-left: 150px;
+    }
+    .footerporsen{
+      width: 55%;
+      height: 180px;
+      display: flex;
+    }
+    .footerporsen{
+      @include flexbox(
+      );
+      margin-top: 90px;
+      margin-right: 650px;
+    }
+    .footerporsen1{
+      width: 100%;
+      height:60px;
+      display: flex
+    }
+    .footerporsen1{
+      @include flexbox(
+      );
+      color: white;
+      font-size: 20px;
+      letter-spacing: 2px;
+      background-color: gray;
+    }
+    .footerporsen2{
+      width: 100%;
+      height: 120px;
+      display: flex;
+    }
+    .footerporsen2{
+      @include flexbox(
+      );
+      margin-top: 60px;
+      margin-left: -450px;
+      color: white;
+      font-size: 20px;
+      background-color: gray
+    }
+    .footerplay{
+      width:50% ;
+      height: 190px;
+      display: flex
+    }
+    .footerplay{
+      @include flexbox(
+      );
+      margin-top: 20px;
+      margin-left: -450px;
+      margin-right: 300px;
+    }
+    .footerplay1{
+      width:100% ;
+      height: 60px;
+      display: flex
+    }
+    .footerplay1{
+      @include flexbox(
+      );
+      background-color: gray;
+      color: white;
+      font-size: 20px;
+      letter-spacing: 2px
+    }
+    .footerplay2{
+      width:100% ;
+      height:130px;
+      display: flex
+    }
+    .footerplay2{
+      @include flexbox(
+      );
+      background-color: gray;
+      margin-top: 60px;
+      margin-left: -405px;
+      color: white;
+    }
+    .footer2{
+      width: 100%;
+      height: 300px;
+      display: flex;
+    }
+    .footer2{
+      @include flexbox(
+      );
+    }
+    .footerbattle{
+      width: 30%;
+      height: 200px;
+      display: flex
+    }
+    .footerbattle{
+      @include flexbox(
+      );
+      background-color: gray;
+      margin-left: 110px;
+      margin-top: 80px;
+    }
+    .footerbattle1{
+      width: 100%;
+      height: 80px;
+      display: flex
+    }
+    .footerbattle1{
+      @include flexbox(
+      );
+      background-color: gray;
+      color: white;
+      font-size: 20px
+    }
+    .footerbattle2{
+      width: 100%;
+      height: 100px;
+      display: flex
+    }
+    .footerbattle2{
+      @include flexbox(
+      );
+      background-color: gray;
+      color: white;
+      margin-top: 90px;
+      margin-left: -550px
+    }
+    .footergame{
+      width: 35%;
+      height: 150px;
+      display: flex;
+    }
+    .footergame{
+      @include flexbox(
+      );
+      margin-right:120px;
+    }
+    .footergame1{
+      width: 100%;
+      height: 50px;
+      display: flex;
+    }
+    .footergame1{
+      @include flexbox(
+      );
+      background-color: gray;
+      color: white;
+      font-size: 20px;
+    }
+    .footergame2{
+      width: 100%;
+      height: 100px;
+      display: flex;
+    }
+    .footergame2{
+      @include flexbox(
+      );
+      background-color: gray;
+      margin-top: 50px;
+      margin-left: -350px;
+      margin-right: 120px;
+      color: white;
+    }
+    .footersport{
+      width: 100%;
+      height: 350px;
+      display: flex
+    }
+    .footersport{
+      @include flexbox(
+      );
+    }
+    .footersport1{
+      width: 30%;
+      height: 200px;
+      display: flex;
+    }
+    .footersport1{
+      @include flexbox(
+      );
+      margin-top: 100px;
+      margin-left: 150px;
+    }
+    .footersport2{
+      width: 100%;
+      height: 60px;
+      display: flex
+    }
+    .footersport2{
+      @include flexbox(
+      );
+      background-color: gray;
+      color: white;
+      font-size: 20px;
+    }
+    .footersport3{
+      width: 100%;
+      height: 140px;
+      display: flex;
+    }
+    .footersport3{
+      @include flexbox(
+      );
+      background-color:gray;
+      margin-top: 60px;
+      margin-right: 50px;
+      margin-left: -355px;
+      color: white;
+    }
+    .footerpuzzle{
+      width: 30%;
+      height: 200px;
+      display: flex;
+    }
+    .footerpuzzle{
+      @include flexbox(
+      );
+      margin-right: 150px
+    }
+    .footerpuzzle2{
+      width: 100%;
+      height: 70px;
+      display: flex
+    }
+    .footerpuzzle2{
+      @include flexbox(
+      );
+      background-color: gray;
+      color: white;
+      font-size: 20px;
+    }
+    .footerpuzzle3{
+      width:100%;
+      height: 130px;
+      display: flex;
+    }
+    .footerpuzzle3{
+      @include flexbox(
+      );
+      background-color: gray;
+      margin-top: 70px;
+      margin-right: 60px;
+      margin-left: -345px;
+      color: white
+    }
+    .footerbut{
+      width: 100%;
+      height: 150px;
+      display: flex
+    }
+    .footerbut{
+      @include flexbox(
+         $justify:flex-end,
+         $items:center
+      );
+      margin-left: -150px;
+    }
+    .button3{
+      background-color: white;
+      border: none;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 48px;
+      margin-left: 780px;
+    }
+    .button2:hover {
+      opacity: 1;
+      background-color: black;
+      color: white;
+    }
+    .footergallery{
+      width: 100%;
+      height: 150px;
+      display: flex;
+    }
+    .footergallery{
+      @include flexbox(
+      );
+      color: white;
+      font-size: 60px;
+      margin-top: 10px;
+      margin-left: 60px
+    }
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto; 
+      @mixin hover-zoom($scale: 1.2, $duration: 0.3s) {
+         transition: transform $duration ease-in-out;
+     
+         &:hover {
+             transform: scale($scale);
+         }
+     }
+     @include hover-zoom(1.3, 0.4s);
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+  .main2{
+      width: 100%;
+      height: 100px;
+      display: flex;    
+  }
+  .main2{
+     @include flexbox( 
+     );
+  }
+  .left2{
+     width: 30%;
+     height: 100px;
+     display: flex;
+  }
+  .left2{
+     @include flexbox(
+        $justify:center,
+        $items:center,
+     );
+     color: white;
+  }
+  .leftone2{
+     width: 60%;
+     height: 100px;
+     display: flex;
+  }
+  .leftone2{
+     @include flexbox(
+        $justify:center,
+        $items:center,  
+     );
+     font-size: 20px;
+  }
+  .footernumber{
+   width: 100%;
+   height: 50px;
+   display: flex;
+  }
+  .footernumber{
+   @include flexbox(
+   );
+   color: white;
+  }
+  .footernumber1{
+   width: 40%;
+   height: 40px;
+  }
+  .footernumber1{
+   @include flexbox(
+   );
+   background-color: white;
+   color: black;
+   border-radius: 5px;
+   margin-left: 250px;
+  }
+  .footernumber2{
+   width: 40%;
+   height: 40px;
+   display: flex;
+  }
+  .footernumber2{
+   @include flexbox(
+   );
+   background-color: white;
+   color: black;
+   border-radius: 5px;
+  }
+  .footerinfo{
+   width: 100%;
+   height: 50px;
+   display: flex;
+  }
+  .footerinfo{
+   @include flexbox(
+   );
+  }
+  .footerinfo1{
+   width: 40%;
+   height: 40px;
+   display: flex;
+  }
+  .footerinfo1{
+   @include flexbox(
+   );
+   margin-left: 250px;
+   color: black;
+   background-color: white;
+   border-radius: 5px;
+  }
+  .footerinfo2{
+   width: 40%;
+   height: 40px;
+   display: flex;
+  }
+  .footerinfo2{
+   @include flexbox(
+   );
+   background-color: white;
+   border-radius: 5px;
+   color: black;
+  }
+  .footertery{
+   width: 100%;
+   height: 50px;
+   display: flex;
+  }
+  .footertery{
+   @include flexbox(
+   );
+  }
+  .footertery1{
+   width: 40%;
+   height: 40px;
+   display: flex;
+  }
+  .footertery1{
+   @include flexbox(
+   );
+   background-color: white;
+   margin-left: 250px;
+   color: black;
+  }
+  .footerletter{
+   width: 100%;
+   height: 400px;
+  }
+  .footerletter{
+   @include flexbox(
+   );
+   background-color: black;
+  }
+  .footerletter2{
+   width: 82%;
+   height: 330px;
+  }
+  .footerletter2{
+   @include flexbox(
+   );
+   background-color: gray;
+   margin-left: 250px;
+   margin-top: 30px
+  }
+  .footerletter3{
+   width: 100%;
+   height: 40px;
+  }
+  .footerletter3{
+   @include flexbox(
+   );
+   color: white;
+   background-color: gray;
+  }
+  .footerletter4{
+   width: 100%;
+   height: 40px;
+  }
+  .footerletter4{
+   @include flexbox(
+   );
+   margin-top: 40px;
+   margin-left: -1100px;
+   color: white;
+   background-color: gray;
+  }
+  .footerletter5{
+   width: 100%;
+   height: 80px;
+  }
+  .footerletter5{
+   @include flexbox(
+   );
+   margin-top: 80px;
+   margin-left: -1100px;
+   background-color: gray;
+  }
+  .button {
+   background-color: white;
+   color: black;
+   padding: 16px 32px;
+   text-align: center;
+   font-size: 16px;
+   opacity: 0.6;
+   transition: 0.3s;
+   display: inline-block;
+   text-decoration: none;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-left: 10px;
+   border: 5px
+ }
+ .button:hover {
+   opacity: 1;
+   background-color: black;
+   color: white
+}
+.footerletter6{
+   width: 100%;
+   height: 40px;
+}
+.footerletter6{
+   @include flexbox(
+   );
+   margin-top: 170px;
+   margin-left: -1100px;
+   color: white;
+   background-color: gray
+}
+.fa-check-circle-o{
+   width: 95%;
+   height: 40px;
+}
+.fa-check-circle-o{
+   @include flexbox(
+   );
+   background-color: gray
+}
+.footerletter7{
+   width: 100%;
+   height: 100px;
+}
+.footerletter7{
+   @include flexbox(
+   );
+   background-color: gray;
+   margin-top: 230px;
+   margin-left: -1100px
+}
+.button {
+   background-color: white;
+   color: black;
+   padding: 16px 32px;
+   text-align: center;
+   font-size: 16px;
+   opacity: 0.6;
+   transition: 0.3s;
+   display: inline-block;
+   text-decoration: none;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-left: 550px;
+   border: 5px
+ }
+ .button:hover {
+   opacity: 1;
+   background-color: black;
+   color: white
+}
+.footerwix{
+   width: 100%;
+   height: 100px;
+}
+.footerwix{
+   @include flexbox(
+   );
+   color: white;
+   margin-left: 240px
+}
+@media (max-width:600px) {
+   
+   
+}
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+.demo{
+   @extend %text_doc;
+   @extend %d-flex;
+   @include flexbox(
+   $items: center,
+   $justify:center,
+   );
+}
